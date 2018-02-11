@@ -1,0 +1,18 @@
+//
+//  yinke.pch
+//  copyYinke
+//
+//  Created by 王网明 on 2018/2/10.
+//  Copyright © 2018年 王网明. All rights reserved.
+//
+
+#ifndef yinke_pch
+#define yinke_pch
+
+#import "Masonry.h"
+
+
+//宏定义
+#import "WMMacros.h"
+
+#endif /* yinke_pch */
