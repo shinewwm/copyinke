@@ -7,6 +7,7 @@
 //
 
 #import "WMShowViewController.h"
+#import "WMShowTopView.h"
 
 @interface WMShowViewController ()<UIScrollViewDelegate>
 
@@ -14,9 +15,26 @@
 
 @property (nonatomic, strong) NSArray *dataSource;
 
+@property (nonatomic, strong) WMShowTopView *topView;
+
 @end
 
 @implementation WMShowViewController
+
+#pragma mark 懒加载
+- (WMShowTopView *)topView{
+    if (!_topView) {
+        _topView = [[WMShowTopView alloc] initWithFrame:CGRectMake(0, 0, 200, 50) withTitleName:self.dataSource];
+        
+        @weakify(self);
+        _topView.block = ^(NSInteger tag) {
+            @strongify(self);
+            CGPoint point = CGPointMake(tag * SCREEN_WIDTH, self.contentScrollView.contentOffset.y);
+            [self.contentScrollView setContentOffset:point animated:YES];
+        };
+    }
+    return _topView;
+}
 
 - (NSArray *)dataSource{
     if (!_dataSource) {
@@ -44,6 +62,8 @@
  设置导航栏
  */
 - (void)setupNavigationViews{
+    self.navigationItem.titleView = self.topView;
+    
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"global_search"] style:UIBarButtonItemStyleDone target:nil action:nil];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"title_button_more"] style:UIBarButtonItemStyleDone target:nil action:nil];
@@ -73,6 +93,16 @@
 }
 
 #pragma mark UIScrollViewDelegate
+
+/**
+ 动画结束
+
+ @param scrollView <#scrollView description#>
+ */
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+    [self scrollViewDidEndDecelerating:scrollView];
+}
+
 /**
  scrollView减速结束调用加载自控制器
 
@@ -86,6 +116,8 @@
     //获得加载的控制器
     NSInteger index = offset_x / width;
     
+    [self.topView scrolling:index];
+    
     UIViewController *vc = self.childViewControllers[index];
     
     //判断当前vc执行过viewdidload过,吐过被load过就返回，没加载过就将子控制器的view添加到scrollview
@@ -94,7 +126,6 @@
     vc.view.frame = CGRectMake(offset_x, 0, width, height);
     
     [scrollView addSubview:vc.view];
-    
-    
+
 }
 @end

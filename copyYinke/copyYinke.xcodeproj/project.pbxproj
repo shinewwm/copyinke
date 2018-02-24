@@ -28,6 +28,7 @@
 		09B560D320303BE50084EFBA /* WMHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560D120303BE50084EFBA /* WMHotViewController.xib */; };
 		09B560D720303BFC0084EFBA /* WMNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560D520303BFC0084EFBA /* WMNearViewController.m */; };
 		09B560D820303BFC0084EFBA /* WMNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560D620303BFC0084EFBA /* WMNearViewController.xib */; };
+		09B560DB204103B00084EFBA /* WMShowTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560DA204103B00084EFBA /* WMShowTopView.m */; };
 		BDFFFE5FA82DDAB368A8B8DA /* libPods-copyYinke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		09B560D420303BFC0084EFBA /* WMNearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMNearViewController.h; sourceTree = "<group>"; };
 		09B560D520303BFC0084EFBA /* WMNearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMNearViewController.m; sourceTree = "<group>"; };
 		09B560D620303BFC0084EFBA /* WMNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMNearViewController.xib; sourceTree = "<group>"; };
+		09B560D9204103B00084EFBA /* WMShowTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMShowTopView.h; sourceTree = "<group>"; };
+		09B560DA204103B00084EFBA /* WMShowTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMShowTopView.m; sourceTree = "<group>"; };
 		9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-copyYinke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAC993C167F9C824BAF0507 /* Pods-copyYinke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.debug.xcconfig"; sourceTree = "<group>"; };
 		CB30C705DEDF8B95A8235089 /* Pods-copyYinke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.release.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 		09B56098202ED6DE0084EFBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09B560D9204103B00084EFBA /* WMShowTopView.h */,
+				09B560DA204103B00084EFBA /* WMShowTopView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -478,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B560DB204103B00084EFBA /* WMShowTopView.m in Sources */,
 				09B560AB202ED6DE0084EFBA /* AppDelegate.m in Sources */,
 				09B560BB202EF4200084EFBA /* WMShowViewController.m in Sources */,
 				09B560D720303BFC0084EFBA /* WMNearViewController.m in Sources */,
