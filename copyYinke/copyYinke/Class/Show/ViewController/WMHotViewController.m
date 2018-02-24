@@ -1,28 +1,22 @@
 //
-//  WMBaseNavViewController.m
+//  WMHotViewController.m
 //  copyYinke
 //
-//  Created by 王网明 on 2018/2/10.
+//  Created by 王网明 on 2018/2/11.
 //  Copyright © 2018年 王网明. All rights reserved.
 //
 
-#import "WMBaseNavViewController.h"
+#import "WMHotViewController.h"
 
-@interface WMBaseNavViewController ()
+@interface WMHotViewController ()
 
 @end
 
-@implementation WMBaseNavViewController
+@implementation WMHotViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self setupNavigationView];
-}
-
-- (void)setupNavigationView{
-    self.navigationBar.barTintColor = WMRGB(0, 216, 201);
-    self.navigationBar.tintColor = [UIColor whiteColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

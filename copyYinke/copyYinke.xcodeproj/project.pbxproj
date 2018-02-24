@@ -22,6 +22,12 @@
 		09B560C4202EF5600084EFBA /* WMBaseNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560C3202EF5600084EFBA /* WMBaseNavViewController.m */; };
 		09B560C8202FEF8B0084EFBA /* WMLaunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560C6202FEF8B0084EFBA /* WMLaunchViewController.m */; };
 		09B560C9202FEF8B0084EFBA /* WMLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560C7202FEF8B0084EFBA /* WMLaunchViewController.xib */; };
+		09B560CD20303BD20084EFBA /* WMFouceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560CB20303BD20084EFBA /* WMFouceViewController.m */; };
+		09B560CE20303BD20084EFBA /* WMFouceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560CC20303BD20084EFBA /* WMFouceViewController.xib */; };
+		09B560D220303BE50084EFBA /* WMHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560D020303BE50084EFBA /* WMHotViewController.m */; };
+		09B560D320303BE50084EFBA /* WMHotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560D120303BE50084EFBA /* WMHotViewController.xib */; };
+		09B560D720303BFC0084EFBA /* WMNearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560D520303BFC0084EFBA /* WMNearViewController.m */; };
+		09B560D820303BFC0084EFBA /* WMNearViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560D620303BFC0084EFBA /* WMNearViewController.xib */; };
 		BDFFFE5FA82DDAB368A8B8DA /* libPods-copyYinke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +59,15 @@
 		09B560C5202FEF8B0084EFBA /* WMLaunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMLaunchViewController.h; sourceTree = "<group>"; };
 		09B560C6202FEF8B0084EFBA /* WMLaunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMLaunchViewController.m; sourceTree = "<group>"; };
 		09B560C7202FEF8B0084EFBA /* WMLaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMLaunchViewController.xib; sourceTree = "<group>"; };
+		09B560CA20303BD20084EFBA /* WMFouceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMFouceViewController.h; sourceTree = "<group>"; };
+		09B560CB20303BD20084EFBA /* WMFouceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFouceViewController.m; sourceTree = "<group>"; };
+		09B560CC20303BD20084EFBA /* WMFouceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMFouceViewController.xib; sourceTree = "<group>"; };
+		09B560CF20303BE50084EFBA /* WMHotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMHotViewController.h; sourceTree = "<group>"; };
+		09B560D020303BE50084EFBA /* WMHotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMHotViewController.m; sourceTree = "<group>"; };
+		09B560D120303BE50084EFBA /* WMHotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMHotViewController.xib; sourceTree = "<group>"; };
+		09B560D420303BFC0084EFBA /* WMNearViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMNearViewController.h; sourceTree = "<group>"; };
+		09B560D520303BFC0084EFBA /* WMNearViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMNearViewController.m; sourceTree = "<group>"; };
+		09B560D620303BFC0084EFBA /* WMNearViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMNearViewController.xib; sourceTree = "<group>"; };
 		9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-copyYinke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAC993C167F9C824BAF0507 /* Pods-copyYinke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.debug.xcconfig"; sourceTree = "<group>"; };
 		CB30C705DEDF8B95A8235089 /* Pods-copyYinke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.release.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,6 +174,15 @@
 				09B560B8202EF4200084EFBA /* WMShowViewController.h */,
 				09B560B9202EF4200084EFBA /* WMShowViewController.m */,
 				09B560BA202EF4200084EFBA /* WMShowViewController.xib */,
+				09B560CA20303BD20084EFBA /* WMFouceViewController.h */,
+				09B560CB20303BD20084EFBA /* WMFouceViewController.m */,
+				09B560CC20303BD20084EFBA /* WMFouceViewController.xib */,
+				09B560CF20303BE50084EFBA /* WMHotViewController.h */,
+				09B560D020303BE50084EFBA /* WMHotViewController.m */,
+				09B560D120303BE50084EFBA /* WMHotViewController.xib */,
+				09B560D420303BFC0084EFBA /* WMNearViewController.h */,
+				09B560D520303BFC0084EFBA /* WMNearViewController.m */,
+				09B560D620303BFC0084EFBA /* WMNearViewController.xib */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -389,6 +413,9 @@
 				09B560C1202EF44F0084EFBA /* WMMeViewController.xib in Resources */,
 				09B56087202ED1EE0084EFBA /* Assets.xcassets in Resources */,
 				09B56085202ED1EE0084EFBA /* Main.storyboard in Resources */,
+				09B560CE20303BD20084EFBA /* WMFouceViewController.xib in Resources */,
+				09B560D820303BFC0084EFBA /* WMNearViewController.xib in Resources */,
+				09B560D320303BE50084EFBA /* WMHotViewController.xib in Resources */,
 				09B560C9202FEF8B0084EFBA /* WMLaunchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,11 +480,14 @@
 			files = (
 				09B560AB202ED6DE0084EFBA /* AppDelegate.m in Sources */,
 				09B560BB202EF4200084EFBA /* WMShowViewController.m in Sources */,
+				09B560D720303BFC0084EFBA /* WMNearViewController.m in Sources */,
 				09B560C0202EF44F0084EFBA /* WMMeViewController.m in Sources */,
 				09B560B7202EF3FC0084EFBA /* WMBaseViewController.m in Sources */,
 				09B560B4202EE92D0084EFBA /* WMTabbar.m in Sources */,
 				09B5608D202ED1EE0084EFBA /* main.m in Sources */,
+				09B560D220303BE50084EFBA /* WMHotViewController.m in Sources */,
 				09B560C8202FEF8B0084EFBA /* WMLaunchViewController.m in Sources */,
+				09B560CD20303BD20084EFBA /* WMFouceViewController.m in Sources */,
 				09B560B1202EE8EE0084EFBA /* WMTabbarViewController.m in Sources */,
 				09B560C4202EF5600084EFBA /* WMBaseNavViewController.m in Sources */,
 			);
