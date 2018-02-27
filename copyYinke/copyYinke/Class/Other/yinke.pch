@@ -13,6 +13,9 @@
 #import "YYKit.h"
 #import "MJExtension.h"
 
+//自定义分类
+#import "UIImageView+SDWebImage.h"
+
 //宏定义
 #import "WMMacros.h"
 #import "WMAPIConfig.h"

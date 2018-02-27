@@ -35,6 +35,8 @@
 		09B560F0204533A80084EFBA /* WMShowHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560EF204533A80084EFBA /* WMShowHandler.m */; };
 		09B560F32045409F0084EFBA /* WMShowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560F22045409F0084EFBA /* WMShowModel.m */; };
 		09B560FC20454A910084EFBA /* MJExtensionConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560FB20454A910084EFBA /* MJExtensionConfig.m */; };
+		09B56100204550D30084EFBA /* WMShowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B560FE204550D30084EFBA /* WMShowTableViewCell.m */; };
+		09B56101204550D30084EFBA /* WMShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B560FF204550D30084EFBA /* WMShowTableViewCell.xib */; };
 		BDFFFE5FA82DDAB368A8B8DA /* libPods-copyYinke.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,9 @@
 		09B560F22045409F0084EFBA /* WMShowModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMShowModel.m; sourceTree = "<group>"; };
 		09B560FA20454A910084EFBA /* MJExtensionConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionConfig.h; sourceTree = "<group>"; };
 		09B560FB20454A910084EFBA /* MJExtensionConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConfig.m; sourceTree = "<group>"; };
+		09B560FD204550D30084EFBA /* WMShowTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMShowTableViewCell.h; sourceTree = "<group>"; };
+		09B560FE204550D30084EFBA /* WMShowTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMShowTableViewCell.m; sourceTree = "<group>"; };
+		09B560FF204550D30084EFBA /* WMShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WMShowTableViewCell.xib; sourceTree = "<group>"; };
 		9F58B853BC4C4DF9FCCBBC7E /* libPods-copyYinke.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-copyYinke.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAC993C167F9C824BAF0507 /* Pods-copyYinke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.debug.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.debug.xcconfig"; sourceTree = "<group>"; };
 		CB30C705DEDF8B95A8235089 /* Pods-copyYinke.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-copyYinke.release.xcconfig"; path = "Pods/Target Support Files/Pods-copyYinke/Pods-copyYinke.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +197,9 @@
 			children = (
 				09B560D9204103B00084EFBA /* WMShowTopView.h */,
 				09B560DA204103B00084EFBA /* WMShowTopView.m */,
+				09B560FD204550D30084EFBA /* WMShowTableViewCell.h */,
+				09B560FE204550D30084EFBA /* WMShowTableViewCell.m */,
+				09B560FF204550D30084EFBA /* WMShowTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -451,6 +459,7 @@
 				09B56087202ED1EE0084EFBA /* Assets.xcassets in Resources */,
 				09B56085202ED1EE0084EFBA /* Main.storyboard in Resources */,
 				09B560CE20303BD20084EFBA /* WMFouceViewController.xib in Resources */,
+				09B56101204550D30084EFBA /* WMShowTableViewCell.xib in Resources */,
 				09B560D820303BFC0084EFBA /* WMNearViewController.xib in Resources */,
 				09B560D320303BE50084EFBA /* WMHotViewController.xib in Resources */,
 				09B560C9202FEF8B0084EFBA /* WMLaunchViewController.xib in Resources */,
@@ -531,6 +540,7 @@
 				09B560F32045409F0084EFBA /* WMShowModel.m in Sources */,
 				09B560D220303BE50084EFBA /* WMHotViewController.m in Sources */,
 				09B560C8202FEF8B0084EFBA /* WMLaunchViewController.m in Sources */,
+				09B56100204550D30084EFBA /* WMShowTableViewCell.m in Sources */,
 				09B560CD20303BD20084EFBA /* WMFouceViewController.m in Sources */,
 				09B560B1202EE8EE0084EFBA /* WMTabbarViewController.m in Sources */,
 				09B560C4202EF5600084EFBA /* WMBaseNavViewController.m in Sources */,

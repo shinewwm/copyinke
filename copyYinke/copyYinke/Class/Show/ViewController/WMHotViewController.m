@@ -8,6 +8,9 @@
 
 #import "WMHotViewController.h"
 #import "WMShowHandler.h"
+#import "WMShowTableViewCell.h"
+
+static NSString *identifier = @"WMShowCell";
 
 @interface WMHotViewController ()
 
@@ -26,12 +29,19 @@
 }
 
 #pragma mark tableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70 + SCREEN_WIDTH;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return nil;
+    WMShowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.model = self.dataSource[indexPath.row];
+    
+    return cell;
 }
 
 - (void)viewDidLoad {
@@ -42,7 +52,7 @@
 }
 
 - (void)initUI{
-    
+    [self.tableView registerNib:[UINib nibWithNibName:@"WMShowTableViewCell" bundle:nil] forCellReuseIdentifier:identifier];
 }
 
 - (void)loadData{
