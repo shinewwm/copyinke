@@ -8,6 +8,7 @@
 
 #import "WMShowHandler.h"
 #import "WMHttpTool.h"
+#import "WMShowModel.h"
 
 @implementation WMShowHandler
 
@@ -18,7 +19,9 @@
             failure(json);
         }else{
             //返回正确数据解析
-            success(json);
+            NSArray *radio_list = [WMShowModel mj_objectArrayWithKeyValuesArray:json[@"radio_list"]];
+            
+            success(radio_list);
         }
     } failure:^(NSError *error) {
         failure(error);

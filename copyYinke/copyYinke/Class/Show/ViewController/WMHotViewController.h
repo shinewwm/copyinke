@@ -8,6 +8,6 @@
 
 #import "WMBaseViewController.h"
 
-@interface WMHotViewController : WMBaseViewController
+@interface WMHotViewController : UITableViewController
 
 @end

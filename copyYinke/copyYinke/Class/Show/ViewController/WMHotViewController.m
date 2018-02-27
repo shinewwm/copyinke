@@ -11,9 +11,28 @@
 
 @interface WMHotViewController ()
 
+@property (nonatomic, strong) NSMutableArray *dataSource;
+
 @end
 
 @implementation WMHotViewController
+
+#pragma mark 懒加载
+- (NSMutableArray *)dataSource{
+    if (!_dataSource) {
+        _dataSource = [NSMutableArray array];
+    }
+    return _dataSource;
+}
+
+#pragma mark tableViewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -28,9 +47,10 @@
 
 - (void)loadData{
     [WMShowHandler executeGetHotShowTaskWithSuccess:^(id obj) {
-        NSLog(@"%@",obj);
+        [self.dataSource addObjectsFromArray:obj];
+        [self.tableView reloadData];
     } failure:^(id obj) {
-        
+        NSLog(@"%@",obj);
     }];
 }
 
