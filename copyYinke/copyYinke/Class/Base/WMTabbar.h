@@ -12,7 +12,6 @@ typedef NS_ENUM(NSInteger,WMItemType){
     WMItemTypeLaunch = 10,//启动直播
     WMItemTypeLive = 100,//直播首页
     WMItemTypeMe,//我的
-    
 };
 
 @class WMTabbar;

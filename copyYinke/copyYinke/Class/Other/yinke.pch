@@ -14,5 +14,6 @@
 
 //宏定义
 #import "WMMacros.h"
+#import "WMAPIConfig.h"
 
 #endif /* yinke_pch */
